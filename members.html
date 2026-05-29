@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+    <title>Members Page</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head> 
+<script src="js/members.js"></script>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>Loan System</h2>
+
+<ul>
+
+        <li>
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="members.html">
+                Members
+            </a>
+        </li>
+
+        <li>
+            <a href="loans.html">
+                Loans
+            </a>
+        </li>
+
+        <li>
+            <a href="reports.html">
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <h1>Member Registration</h1>
+
+    <form class="member-form">
+
+        <label>Full Name</label>
+        <input type="text"
+               placeholder="Enter Full Name"
+               pattern="[A-Za-z\s ]+"
+               title="Only letters are allowed"
+               required>
+
+        <label>Phone Number</label>
+        <input type="number"
+               placeholder="Enter Phone Number">
+
+        <label>National ID</label>
+        <input type="number"
+               placeholder="Enter National ID"
+               pattern="[A-Za-z\s ]+"
+               title="Only letters are allowed"
+               required>
+
+        <button type="submit">
+            Add Member
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

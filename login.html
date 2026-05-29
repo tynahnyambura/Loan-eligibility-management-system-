@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Loan Management System</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+<script src="js/login.js"></script>
+
+<body>
+
+<div class="login-box">
+
+    <h1>LOAN ELIGIBILITY MANAGEMENT SYSTEM</h1>
+
+    <form onsubmit="return validateLogin()">
+
+        
+  <input type="text"
+           placeholder="Enter Username"
+           pattern="[A-Za-z ]+"
+           title="Username should contain letters only"
+           required>
+
+           <input type="password"
+       id="password"
+       placeholder="Password"
+       minlength="6"
+       required>
+
+
+
+
+        <div class="show-password">
+
+            <input type="checkbox" id="showPass"
+                   onclick="togglePassword()">
+
+            <label>
+                Show password
+            </label>
+
+        </div>
+
+        <div class="buttons">
+           
+
+            <button type="submit">
+
+                Login
+
+            </button>
+            
+
+            <button type="reset">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+        <div class="forgot-password">
+
+            <a href="#">
+
+                Forgot password?
+
+            </a>
+
+        </div>
+
+        <p id="error-message"></p>
+
+    </form>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
